@@ -70,7 +70,6 @@ const Slider: React.FC<SliderComponentProps> = ({
   }, [disabled, isSwipeInProgress, swipeThreshold]);
 
   // Function to start arrow animation
-  // This function can be called from both JS and worklets
   const startArrowAnimation = () => {
     "worklet";
     if (disabledShared.value || isSwipeInProgressShared.value) return;
@@ -89,15 +88,7 @@ const Slider: React.FC<SliderComponentProps> = ({
   useEffect(() => {
     if (disabled || isSwipeInProgress) return;
 
-    // Call animation function directly (it's safe to call from JS)
-    arrowTranslateX.value = withRepeat(
-      withSequence(
-        withTiming(10, { duration: 500 }),
-        withTiming(0, { duration: 500 }),
-      ),
-      -1, // infinite loop
-      false,
-    );
+    startArrowAnimation();
 
     return () => {
       cancelAnimation(arrowTranslateX);
