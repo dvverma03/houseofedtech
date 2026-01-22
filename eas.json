@@ -13,12 +13,12 @@
     },
     "production": {
       "autoIncrement": true
+    },
+    "apk": {
+      "android": {
+        "buildType": "apk"
+      }
     }
-    // "apk": {
-    //   "android": {
-    //     "buildType": "apk"
-    //   }
-    // }
   },
   "submit": {
     "production": {}
