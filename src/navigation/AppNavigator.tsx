@@ -9,7 +9,6 @@ import * as Notifications from "expo-notifications";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 
-import ExploreScreen from "@/src/screens/ExploreScreen";
 import HomeScreen from "@/src/screens/HomeScreen";
 import VideoScreen from "@/src/screens/VideoScreen";
 import WebViewScreen from "@/src/WebView/WebViewScreen";
@@ -68,14 +67,6 @@ export default function AppNavigator() {
           component={HomeScreen}
           options={{
             title: "Home",
-          }}
-        />
-        <Stack.Screen
-          name="Explore"
-          component={ExploreScreen}
-          options={{
-            title: "Explore",
-            headerShown: true,
           }}
         />
         <Stack.Screen

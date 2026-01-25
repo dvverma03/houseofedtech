@@ -17,3 +17,14 @@ export interface WebViewState {
   canGoBack: boolean;
   canGoForward: boolean;
 }
+
+export interface SliderComponentProps {
+  onSwipeComplete: () => void;
+  text: string;
+  successMessage?: string;
+  disabled?: boolean;
+  backgroundColor?: string;
+  textColor?: string;
+  swipeThreshold?: number;
+  resetDelay?: number;
+}

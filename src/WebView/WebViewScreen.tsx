@@ -21,7 +21,7 @@ export default function WebViewScreen() {
   const handleLoadEnd = async () => {
     setLoading(false);
 
-    // Bonus: Notification when WebView loads
+    // Notification when WebView loads
     try {
       await scheduleNotification(
         "Website Loaded",

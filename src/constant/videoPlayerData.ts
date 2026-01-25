@@ -1,11 +1,4 @@
-/**
- * Type definition for homepage section data
- */
-export interface VideoStream {
-    id: number;
-    name: string;
-    url: string;
-}
+import { VideoStream } from "./types";
 
 export const VIDEO_STREAMS: VideoStream[] =
     [

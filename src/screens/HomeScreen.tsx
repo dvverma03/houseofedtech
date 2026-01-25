@@ -9,7 +9,8 @@ import { useCallback, useMemo } from "react";
 import { Alert, StyleSheet } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import { HomepageSection } from "../components/HomePageItem";
-import { createHomepageData, HomepageDataItem } from "../constant/homePageData";
+import { createHomepageData } from "../constant/homePageData";
+import { HomepageDataItem } from "../constant/types";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
