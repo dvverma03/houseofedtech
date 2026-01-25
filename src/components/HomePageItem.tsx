@@ -1,5 +1,5 @@
 import { Dimensions, Image, StyleSheet, View } from "react-native";
-import { HomepageDataItem } from "../config/homepageData";
+import { HomepageDataItem } from "../constant/types";
 import SectionTitle from "./SectionTitle";
 import Slider from "./Slider";
 

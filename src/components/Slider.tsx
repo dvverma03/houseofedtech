@@ -12,19 +12,9 @@ import Animated, {
   withSequence,
   withTiming,
 } from "react-native-reanimated";
+import { SliderComponentProps } from "../types";
 
 const { width: screenWidth } = Dimensions.get("window");
-
-interface SliderComponentProps {
-  onSwipeComplete: () => void;
-  text: string;
-  successMessage?: string;
-  disabled?: boolean;
-  backgroundColor?: string;
-  textColor?: string;
-  swipeThreshold?: number;
-  resetDelay?: number;
-}
 
 const Slider: React.FC<SliderComponentProps> = ({
   onSwipeComplete,
